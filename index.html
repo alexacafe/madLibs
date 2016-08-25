@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad Libs</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <style>
+    	body {
+    		background-color: #b4e1ff; 
+    		color: #AB87FF; 
+    		text-align: center; 
+    		font-size: 16px; 
+    		font-family: 'Fjalla One', sans-serif;
+    	}
+    	div {
+    		width: 400px; 
+    		background-color: #F5FFC6; 
+    		border-color: white; 
+    		border-width: 5px; 
+    		border-style: solid; 
+    		margin: auto; 
+    		padding:10px;
+    	}
+    	h1 {
+    		font-size: 48px;
+    	}
+    </style>
+</head>
+<body>
+	<br>
+	<h1> Mad Libs!!! </h1>
+	<br>
+	<!-- User inputs -->
+	<div>
+		<p id="noun">Noun:  </p>
+		<p id="adjective">Adjective:  </p>
+		<p id="verb">Verb:  </p>
+	</div>
+  	<br>
+
+ 	<!-- Story -->
+  	<div id = "story">
+  	</div>
+  	
+	<script>
+		var noun = prompt("Enter a noun");
+		document.getElementById("noun").innerHTML += noun;
+		var adjective = prompt("Enter an adjective");
+		document.getElementById('adjective').innerHTML += adjective;
+		var verb = prompt("Enter a verb");
+		document.getElementById('verb').innerHTML += verb;
+		var noun2 - prompt ("Enter another noun");
+		alert("Click ok to see your story!");
+		document.getElementById("story").innerHTML = "Once upon a time, there was a " + noun + " who lived in a " + noun2 + ". One day, the " + noun + " felt really " + adjective + ", so they decided to " + verb + " really really fast and then they lived happily ever after. <br><br> The End";			
+	</script>
+</body>
+</html>
