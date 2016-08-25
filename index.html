@@ -32,8 +32,10 @@
 	<!-- User inputs -->
 	<div>
 		<p id="noun">Noun:  </p>
+		<p id="noun2">Noun 2: </p>
 		<p id="adjective">Adjective:  </p>
 		<p id="verb">Verb:  </p>
+		
 	</div>
   	<br>
 
@@ -49,8 +51,9 @@
 		var verb = prompt("Enter a verb");
 		document.getElementById('verb').innerHTML += verb;
 		var noun2 = prompt ("Enter another noun");
+		document.getElementById("noun2").innerHTML += noun2;
 		alert("Click ok to see your story!");
-		document.getElementById("story").innerHTML = "Once upon a time, there was a " + noun + " who lived in a " + noun2 + ". One day, the " + noun + " felt really " + adjective + ", so they decided to " + verb + " really really fast and then they lived happily ever after. <br><br> The End";			
+		document.getElementById("story").innerHTML = "Once upon a time, there was a <u>" + noun + "</u> who lived in a <u>" + noun2 + "</u>. One day, the <u>" + noun + "</u> felt really <u>" + adjective + "</u>, so they decided to <u>" + verb + "</u> really really fast and then they lived happily ever after. <br><br> The End";			
 	</script>
 </body>
 </html>
